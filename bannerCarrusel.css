@@ -1,0 +1,151 @@
+            .banner {
+                background-color: #90CAF9;
+                color: #FFFFFF;
+                width: 100vw;
+                min-height: 400px;/*largo */
+                box-sizing: border-box;
+                padding: 80px 20px;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                display: flex;
+                font-weight : 800px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5rem;
+            }
+            
+            .carrusel-caylu {
+                position: relative;
+                max-width: 100%;
+                margin: auto;
+                overflow: hidden;
+                background: #f9f9f9;
+                border-radius: 12px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+
+            .carrusel-item {
+                display: none;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .carrusel-item img {
+                width: 100%;
+                max-width: 500px;
+                border-radius: 10px;
+            }
+
+            .carrusel-item p {
+                margin-top: 8px;
+                font-weight: bold;
+                color: #333;
+            }
+
+            .activo {
+                display: block;
+            }
+    
+
+            .carrusel-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: #fff;
+                    border: none;
+                    font-size: 2rem;
+                    cursor: pointer;
+                    padding: 5px 12px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            }
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+            .swiper-slide img {
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease;
+            }
+
+            .swiper-slide img:hover {
+                transform: scale(1.05);
+            }
+            /**botones del banner  */
+            .botones-subida {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            }
+
+.btn-wapp,
+.btn-pagina {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.btn-wapp {
+  background-color: #25D366; /* Verde WhatsApp */
+}
+
+.btn-wapp:hover {
+    background-color: #1DA851;
+}
+
+.btn-pagina {
+  background-color: #007BFF; /* Azul página */
+}
+
+.btn-pagina:hover {
+    background-color: #0056b3;
+}
+/* Estilo del desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  top: 40px;
+  z-index: 10;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background: #f0f8ff;
+  color: #007bff;
+}
+
+/* Mostrar al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media ( max-width: 768px ){
+            
+    .banner{
+        padding: 40px 15px;
+        min-height: auto
+        }
+        
+        .carrusel-item img {
+        max-width: 100%;
+        }
+
+}

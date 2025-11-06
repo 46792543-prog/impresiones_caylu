@@ -1,0 +1,42 @@
+.barra-redes {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+  background-color: #FFFFFF;
+  padding: 10px 8px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.barra-redes a {
+  color: #e91e63;
+  font-size: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.barra-redes a:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+.barra-redes .facebook:hover {
+  background-color: #1877f2;
+}
+
+.barra-redes .ubicacion:hover {
+  background-color: #0077b5;
+}
+.barra-redes .gmail:hover {
+  background-color: #0077b5;
+}
+.barra-redes .whatsapp:hover {
+  background-color: #0077b5;
+}

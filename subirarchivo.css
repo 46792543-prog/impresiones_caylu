@@ -1,0 +1,84 @@
+.formulario-subida {
+  margin: 120px auto;
+  max-width: 750px;
+  padding: 90px; /* espacio interno más razonable */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.formulario-subida h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.formulario-subida label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.formulario-subida input,
+.formulario-subida select,
+.formulario-subida textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.formulario-subida textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formulario-subida button {
+  background-color: #007bff;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-subida button:hover {
+  background-color: #0056b3;
+}
+.drive-btn{
+  background-color: #007bff;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+@media screen and (max-width: 600px) {
+  .formulario-subida {
+    margin: 80px 20px;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .formulario-subida h2 {
+    font-size: 20px;
+  }
+
+  .formulario-subida button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
